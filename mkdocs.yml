@@ -1,0 +1,9 @@
+site_name: 'auth-service-docs'
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - API Reference: api.md
+theme:
+  name: material
+plugins:
+  - techdocs-core
