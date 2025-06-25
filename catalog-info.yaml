@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1beta1
+kind: Component
+metadata:
+  name: auth-service
+  description: Authentication service
+  tags:
+    - javascript
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: guests
