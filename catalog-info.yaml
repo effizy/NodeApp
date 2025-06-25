@@ -7,9 +7,9 @@ metadata:
     - javascript
   links:
     - url: https://google.com
-      title: Application UI
+      title: auth-service-link
       icon: dashboard
-      type: application-ui
+      type: authservicelink-ui
 spec:
   type: service
   lifecycle: production
@@ -29,7 +29,6 @@ spec:
   owner: fmb-sre
   dependsOn:
     - component: auth-service
-  apiProvidedBy: auth-service
   definition:
     $text: https://raw.githubusercontent.com/your-org/backstage-auth-service/main/openapi/auth-api-spec.yaml
 
