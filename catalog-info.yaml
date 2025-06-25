@@ -8,7 +8,7 @@ metadata:
   links:
     - url: https://google.com
       title: auth-service-link
-      icon: dashboard
+      icon: link  # Changed to standard icon
       type: website
 spec:
   type: service
@@ -28,7 +28,7 @@ spec:
   lifecycle: production
   owner: fmb-sre
   dependsOn:
-    - component: auth-service
+    - kind: Component  # Fixed syntax
+      name: auth-service
   definition:
     $text: https://raw.githubusercontent.com/your-org/backstage-auth-service/main/openapi/auth-api-spec.yaml
-
