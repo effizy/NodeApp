@@ -1,6 +1,6 @@
 site_name: 'auth-service-docs'
 nav:
-  - Home: index.md
+  - Home: test.md
   - Getting Started: getting-started.md
   - API Reference: api.md
 theme:
