@@ -13,4 +13,23 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: guests
+  owner: fmb-sre
+  providesApis:
+    - auth-api
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: auth-api
+  description: Service API for verifying user authentication status
+spec:
+  type: openapi
+  lifecycle: production
+  owner: fmb-sre
+  dependsOn:
+    - component: auth-service
+  apiProvidedBy: auth-service
+  definition:
+    $text: https://raw.githubusercontent.com/your-org/backstage-auth-service/main/openapi/auth-api-spec.yaml
+
