@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: auth-service
   description: Authentication service
+  annotations:
+    backstage.io/techdocs-ref: dir:.
   tags:
     - javascript
   links:
