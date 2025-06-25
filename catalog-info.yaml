@@ -6,7 +6,7 @@ metadata:
   tags:
     - javascript
   links:
-    - url: https://admin.example-org.com
+    - url: https://google.com
       title: Admin Dashboard
       icon: dashboard
       type: admin-dashboard
