@@ -7,9 +7,9 @@ metadata:
     - javascript
   links:
     - url: https://google.com
-      title: Admin Dashboard
+      title: Application UI
       icon: dashboard
-      type: admin-dashboard
+      type: application-ui
 spec:
   type: service
   lifecycle: production
