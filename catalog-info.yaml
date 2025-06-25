@@ -30,5 +30,17 @@ spec:
   dependsOn:
     - kind: Component  # Fixed syntax
       name: auth-service
-  definition:
-    $text: https://raw.githubusercontent.com/your-org/backstage-auth-service/main/openapi/auth-api-spec.yaml
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Artist API
+      license:
+        name: MIT
+    servers:
+      - url: http://artist.spotify.net/v1
+    paths:
+      /artists:
+        get:
+          summary: List all artists
+    ...
