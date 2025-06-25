@@ -9,7 +9,7 @@ metadata:
     - url: https://google.com
       title: auth-service-link
       icon: dashboard
-      type: authservicelink-ui
+      type: website
 spec:
   type: service
   lifecycle: production
