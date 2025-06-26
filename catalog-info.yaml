@@ -46,3 +46,17 @@ spec:
         get:
           summary: List all artists
     ...
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: external-service
+  description: External service for demonstration
+spec:
+  type: service
+  lifecycle: production
+  owner: fmb-sre
+  consumesApis:
+    - auth-api
+  
