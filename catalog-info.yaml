@@ -53,6 +53,11 @@ kind: Component
 metadata:
   name: external-service
   description: External service for demonstration
+  links:
+    - url: https://fairmoney.io
+      title: external-service-link
+      icon: link  # Changed to standard icon
+      type: website
 spec:
   type: service
   lifecycle: production
