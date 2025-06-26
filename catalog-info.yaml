@@ -53,6 +53,10 @@ kind: Component
 metadata:
   name: external-service
   description: External service for demonstration
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - javascript
   links:
     - url: https://fairmoney.io
       title: external-service-link
